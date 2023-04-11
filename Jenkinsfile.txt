@@ -6,8 +6,8 @@ agent any
             steps {
                 bat script: '''
                     pip install -r requirements.txt
-                    py.test tests/test_e2e.py
-                    py.test tests/test_Homepage.py'''
+                    pytest tests/test_e2e.py
+                    pytest tests/test_Homepage.py'''
 
             }
             post {
